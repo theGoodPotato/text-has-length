@@ -26,5 +26,6 @@ wordform = {
     70: 'seventy',
     80: 'eighty',
     90: 'ninety',
-    100: 'one hundred'
+    100: 'one hundred',
+    0: '', # needed to account for zero as a split part
 }
