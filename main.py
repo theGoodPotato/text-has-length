@@ -3,10 +3,10 @@ def text_has_length(start,end):
     try: 
         str(start)
         str(end)
-    except: 
+    except TypeError: 
         return "arguments are not strings"
     number_len = len(str(start) + str(end))
-    interjection = ''
+    interjection = 'a'
     for n in wordform: 
         if n == number_len:  
             print(start +   " " + interjection + ' ' + end)
