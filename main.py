@@ -1,12 +1,15 @@
-def text_has_length(start,end): 
+def text_has_length(start: str,end: str): 
+    """
+    Gives a string with the total amount of characters it contains within the string. 
+    Arguments: 
+        start (str): The start of the output string
+        end (str): The end of the output string
+    """
     from dictionary import wordform
-    try: 
-        str(start)
-        str(end)
-    except TypeError: 
-        return "arguments are not strings"
-    number_len = len(str(start) + str(end))
-    interjection = 'a'
+    # Catchment for common errors
+    # End of catchment
+    number_len = len(str(start) + str(end)) # Initial
+    interjection = ''
     for n in wordform: 
         if n == number_len:  
             print(start +   " " + interjection + ' ' + end)
